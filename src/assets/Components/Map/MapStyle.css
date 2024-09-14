@@ -1,0 +1,59 @@
+.Map{
+    padding-top: 50px;
+    gap: 20px;
+}
+.Map .knowUs h1{
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 49.07px;
+    padding-top: 34px;    
+}
+.Map .knowUs .desc{
+    max-width: 570px;
+    line-height: 24.03px;
+    text-align: justify;
+    padding: 30px 0 69px 0;
+}
+.Map .form{
+    gap: 35px;
+}
+input[placeholder]{
+    color: #937DC2;
+}
+input::placeholder{
+    color: #937DC2;
+}
+input[type="text"] , input[type="email"] {
+    width: 570px;
+    border: none;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #937DC2;
+    color: #937DC2;
+    background: none;
+}
+.form button{
+    width: 570px;
+    height: 50px;
+    padding: 12.02px 32.04px 12.02px 32.04px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #937DC2;
+}
+
+@media (max-width:992px){
+    .Map{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:600px){
+    input[type="text"] , input[type="email"] , .form button{
+        width: 280px;
+    }
+    .Map .knowUs h1{
+        font-size: 28px;
+    }
+
+}

@@ -1,0 +1,112 @@
+nav{
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    top: 33px;
+    z-index: 100;
+}
+.nav-items{
+    gap: 35px;
+}
+.nav-items li a{
+    font-size: 17px;
+    color: var(--text-color);
+    font-weight: 400;
+    position: relative;
+}
+.menu-icon{
+    display: none;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.logo img{
+    width: 15.79px;
+    height: 16.25px;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 246px;
+    background-color: var(--bg-color);
+    height: calc(100vh - 36px);
+    padding-top: 105px;
+}
+.nav-mobile .mode-img{
+    display: none;
+}
+.nav-mobile .conMode{
+    padding: 17px 20px 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-mobile-items{
+    gap: 50px;
+    padding: 0 0 50px 20px;
+    border-bottom: 1px solid #937DC2;
+    width: 100%;
+}
+.nav-mobile-items a{
+    color: var(--text-color);
+}
+.close-icon{
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+.container .conMode{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.container .conMode div{
+    display: none;
+}
+.toggle{
+    width: 29px;
+    height: 10px;
+    border-radius: 13px;
+    background-color: #937DC2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.9s;
+    
+}
+.toggle-dark{
+    width: 29px;
+    height: 10px;
+    border-radius: 13px;
+    background-color: #937DC2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.toggle-circle{
+    width: 17px;
+    height: 17px;
+    border: 1px solid #937DC2;
+    border-radius: 50%;
+    background-color: #FFF;
+    z-index: 9999;
+
+}
+
+@media (max-width:992px) {
+    .nav-items , nav .container .conMode {
+        display: none;
+    }
+    nav .container .conMode{
+        border-top: 3px solid #937DC2;
+    }
+    .menu-icon{
+    display: block;
+    }
+}

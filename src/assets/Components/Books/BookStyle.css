@@ -1,0 +1,14 @@
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0em;
+    padding: 100px 0 46px 0;
+    
+}
+@media screen and (max-width:368px) {
+    .title{
+        font-size: 26px;
+        text-align: center;
+    }
+}

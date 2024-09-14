@@ -3,7 +3,7 @@ import './NavBarStyle.css'
 import world_img from './../../../images/world.png'
 import NavItem from './NavItem'
 import menu_icon from './../../../images/Menu.svg'
-import close_icon from './../../../images/close.svg'
+import close_icon from './../../../images/Close.svg'
 
 const NavBar = () => {
 const [menu , setmenu] = useState(false)
